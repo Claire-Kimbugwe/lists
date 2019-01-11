@@ -30,8 +30,12 @@ def custom_len(input_list):
         8
 
     """
+    result =0
+    for word in input_list:
+        result +=1
 
-    return 0
+
+    return result
 
 
 # For the next four exercises, you'll need to be clever and think about ways
@@ -58,8 +62,10 @@ def custom_append(input_list, value):
         True
 
     """
+    (input_list + [value])== input_list.append(value)
 
-    pass
+
+    
 
 
 def custom_extend(input_list, second_list):
@@ -78,7 +84,7 @@ def custom_extend(input_list, second_list):
 
     """
 
-    pass
+    (input_list + [second_list])== input_list.extend(second_list)
 
 
 def custom_insert(input_list, index, value):
@@ -96,8 +102,8 @@ def custom_insert(input_list, index, value):
 
     """
 
-    pass
-
+    input_list[index:index] = [value]
+    
 
 def custom_remove(input_list, value):
     """Remove the first item of the value in list.
@@ -115,7 +121,8 @@ def custom_remove(input_list, value):
 
     """
 
-    pass
+    input_list.pop(value)
+
 
 
 def custom_pop(input_list):
@@ -133,8 +140,8 @@ def custom_pop(input_list):
         ['Jan', 'Feb']
 
     """
-
-    return None
+    input_list[:-1]
+    return input_list[-1]
 
 
 def custom_index(input_list, value):
@@ -149,8 +156,14 @@ def custom_index(input_list, value):
         1
 
     """
+    results= 0
+    for i, j in enumerate(input_list):
+        if j == value:
+            results= i
+            
+    return results
 
-    return 0
+    
 
 
 def custom_count(input_list, value):

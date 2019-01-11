@@ -85,7 +85,7 @@ def first_three(input_list):
 
     """
 
-    return input_list[0:3]
+    return input_list[:3]
 
 
 def last_five(input_list):
@@ -156,7 +156,7 @@ def replace_head(input_list):
     """
 
     input_list[0]=42
-    return
+    
 
 
 
@@ -174,7 +174,7 @@ def replace_third_and_last(input_list):
     input_list[2]=37
     input_list[-1]=37
 
-    return
+    
 
 
 def replace_middle(input_list):
@@ -194,7 +194,7 @@ def replace_middle(input_list):
     """
     input_list[2:-2]=[42,37]
 
-    return 
+     
 
 
 def delete_third_and_seventh(input_list):
@@ -209,8 +209,8 @@ def delete_third_and_seventh(input_list):
 
     """
     input_list.pop(2)
-    input_list.pop(-2)
-    return
+    input_list.pop(5)
+    
 
 
 def delete_middle(input_list):
@@ -228,7 +228,7 @@ def delete_middle(input_list):
     """
     del input_list[2:-2]
 
-    return
+    
 
 ##############################################################################
 # END OF MAIN EXERCISE.  Yay!  You did it! You Rock!
